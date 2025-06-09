@@ -3,9 +3,8 @@
 
 ## Project Overview
 
-**Database**: `p1_retail_db`
+**Database**: `retail_sales_dataset`
 
-This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries. This project is ideal for those who are starting their journey in data analysis and want to build a solid foundation in SQL.
 
 ## Objectives
 
@@ -34,7 +33,7 @@ SELECT * FROM retail_sales_dataset
 SELECT COUNT(DISTINCT(Customer_ID)) AS CUSTOMER_COUNT FROM retail_sales_dataset
 SELECT DISTINCT Product_Category FROM retail_sales_dataset
 
---- CHEKING FOR NULL VALUES
+--- CHECKING FOR NULL VALUES
 SELECT * FROM retail_sales_dataset
 WHERE Transaction_ID IS NULL OR 
 Date IS NULL OR 
@@ -92,7 +91,7 @@ WHERE Customer_ID NOT IN(
 
 ```
 
-5. **Write a SQL query to find the top 3 CUTOMER with the highest AMOUNT.**:
+5. **Write a SQL query to find the top 3 CUSTOMERS with the highest AMOUNT.**:
 ```sql
 
 SELECT TOP 3 Customer_ID,SUM(Total_Amount) AS AMT
